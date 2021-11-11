@@ -74,7 +74,46 @@ console.log(city[0]);
 
 city = 'Taubate';
 
+// Statements
+
+// Condicional
+// if...else
+
+if (true) {
+  // execução se condição for verdadeira
+}else if(true) {
+  // execução se a primeira condição for falsa e segunda verdadeira
+}else {
+  // execução se nenuma condição for verdadeira
+}
+
+// switch
+let expression = 1;
+
+switch (expression) {
+  case 1:
+    // Execução caso minha expressão seja = a este case
+  break;
+  case 2:
+    // Execução caso minha expressão seja = a este case
+  break;
+  case 3:
+    // Execução caso minha expressão seja = a este case
+  break;
+  default:
+    // Execução caso a expressão não cumpra com nenhum dos cases
+}
+
+// Operador ternario
+
+// ?
+
+// /*condição*/ ? /*resultado verdadeiro*/ : /*resultado se falso*/
+
+'Gabriel' ? console.log('true') : console.log('false');
 
 
+'' && console.log('true');
 
+// 
 
