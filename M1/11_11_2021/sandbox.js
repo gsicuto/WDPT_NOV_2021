@@ -115,5 +115,50 @@ switch (expression) {
 
 '' && console.log('true');
 
-// 
+// Loops and Iterations 
+
+// while
+let i = 9;// inicializador
+
+while(i <= 10){ // condição
+  console.log(i);
+  i += 1  // expressão final
+}
+
+// do while
+
+let j = 0;
+
+do {
+  console.log(j);
+  j += 1;
+} while (j <= 10);
+
+// for
+
+// for (inicializador; condição; expressão final)
+
+for (let k = 9; k <= 10; k += 1){
+  console.log(k)
+};
+
+let word = 'proparoxitona';
+
+for (let y = word.length; y >= 0; y -= 1){
+  console.log(word[y]);
+};
+
+// for of
+
+// = -> atribuição
+// == -> comparação sem tipagem
+
+for(let letter of word){
+  if(letter === 'x' ){
+    continue;
+  }
+  console.log(letter.toUpperCase());
+}
+
+// break continue
 
