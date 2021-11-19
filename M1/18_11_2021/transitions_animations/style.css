@@ -1,0 +1,57 @@
+.box{
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+}
+.box:hover{
+  background-color: green;
+  width: 200px;
+  height: 200px;
+
+  transition: height 2s ease-in 1s, width 4s linear 2s, background-color 6s linear 3s
+  
+}
+
+
+
+#test:not(:active) {
+  /* now keep red background for 1s */
+  transition: background-color 2s linear;
+}
+
+#test:active {
+  background: red;
+}
+
+
+.hexagon{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  animation-name: transform;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes transform {
+  0% {
+    border-radius: 10%;
+    background-color: blue;
+  }
+  10% {
+    border-radius: 15%;
+    background-color:green;
+  }
+  50% { 
+    border-radius: 30%;
+    background-color: red;
+  }
+  100% {
+    border-radius: 50%;
+    background-color: salmon;
+  }
+
+  
+}
+
