@@ -113,7 +113,7 @@ const randomNumbers = [10, 2, 198, 23, 13, 18, 65, 2000, 1200];
 
 randomNumbers.sort(); // Ordena pela tabela ASC (string)
 
-console.log(randomNumbers) // não vai ordenar corretamente numeros
+console.log(randomNumbers); // não vai ordenar corretamente numeros
 
 // randomNumbers.sort((a, b) => {
 //   if (a < b) return -1;

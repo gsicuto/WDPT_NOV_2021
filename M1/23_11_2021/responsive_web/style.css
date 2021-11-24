@@ -1,0 +1,34 @@
+html{
+  font-size: 10px;
+  width: 200px;
+}
+
+div{
+  width: 2rem;
+  height: 20vw;
+  font-size: 2rem;
+  background-color: blue;
+}
+
+section{
+  width: 500px;
+  border: 1px solid red;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 650px) and (max-width: 999px){
+  div{
+    background-color: red;
+    width: 50vw;
+    height: 10vh;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 649px) {
+  div{
+    background-color: green;
+    width: 100%;
+    font-size: 0.8em;
+  }
+}
