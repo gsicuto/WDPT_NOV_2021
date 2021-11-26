@@ -30,8 +30,8 @@ class AnglerFish extends Animal {
   scream() {
     console.log(`${this.sound}, 💜💜💜💜💜`);
   }
-};
+}
 
-let luzinha = new AnglerFish('Luzinha', '10m');
+const luzinha = new AnglerFish('Luzinha', '10m');
 
 luzinha.scream();
