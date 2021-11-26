@@ -88,49 +88,49 @@ const board = [100, -10, 0, 0, -40, -10, -10, 5, 0, -10, -50, -10, 0, 0, -50, -1
 
 // Using Methods
 
-let player1 = {
+const player1 = {
   name: 'Erico',
   color: 'white',
   position: 0,
   cash: 1000,
   move() {
-    let dice = 1 + Math.floor(6 * Math.random());
+    const dice = 1 + Math.floor(6 * Math.random());
     this.position = (this.position + dice) % board.length;
     this.cash += board[this.position];
     if (this.cash <= 0) {
       console.log(`Game over for ${this.name}.`);
     }
-  }
+  },
 };
 
-let player2 = {
+const player2 = {
   name: 'Igor',
   color: 'red',
   position: 0,
   cash: 1000,
   move() {
-    let dice = 1 + Math.floor(6 * Math.random());
+    const dice = 1 + Math.floor(6 * Math.random());
     this.position = (this.position + dice) % board.length;
     this.cash += board[this.position];
     if (this.cash <= 0) {
       console.log(`Game over for ${this.name}.`);
     }
-  }
+  },
 };
 
-let player3 = {
+const player3 = {
   name: 'Adalberto',
   color: 'blue',
   position: 0,
   cash: 1000,
   move() {
-    let dice = 1 + Math.floor(6 * Math.random());
+    const dice = 1 + Math.floor(6 * Math.random());
     this.position = (this.position + dice) % board.length;
     this.cash += board[this.position];
     if (this.cash <= 0) {
       console.log(`Game over for ${this.name}.`);
     }
-  }
+  },
 };
 
 // Turno 1
@@ -172,7 +172,7 @@ const chuck = {
     const randomNumber = Math.floor(Math.random() * this.jokes.length);
     return this.jokes[randomNumber];
   },
-}
+};
 
 chuck.getAge();
 chuck.addJoke('What Goes through Chuck Noris enemie\'s head? His shoe');

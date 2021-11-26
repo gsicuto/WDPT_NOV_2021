@@ -25,9 +25,9 @@ class Player {
 // Initialization of players
 
 
-let player1 = new Player('Lucas', 'red');
-let player2 = new Player('Juliana', 'blue');
-let player3 = new Player('Thais', 'yellow');
+const player1 = new Player('Lucas', 'red');
+const player2 = new Player('Juliana', 'blue');
+const player3 = new Player('Thais', 'yellow');
 
 // Turn 1
 
