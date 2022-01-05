@@ -68,7 +68,7 @@ class Component {
     return this.posY + this.height;
   };
 
-  crashWith(obst) {
+  crashWith = (obst) => {
     const freeLeft = this.left() > obst.right();
     const freeRight = this.right() < obst.left();
     const freeTop = this.top() > obst.bottom();
