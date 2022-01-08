@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script crossorigin src="https://unpkg.com/react@16.13.0/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16.13.0/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <!-- Aqui será renderizado toda minha aplicação -->
+  </div>
+
+  <script type="text/babel">
+    const root = document.getElementById('root');
+    // const mainHeading = document.createElement('h1');
+    // mainHeading.textContent = 'Olá Mundo';
+    // root.appendChild(mainHeading);
+
+    // const element = React.createElement('div', {
+    //   className: 'container',
+    //   children: [
+    //     React.createElement('h1', {
+    //       children:'Are you React-ing?'
+    //     }),
+    //     React.createElement('h3', {
+    //       children: [
+    //         'Time now is:',
+    //         `${new Date().getHours()}:
+    //           ${new Date().getMinutes()}:
+    //           ${new Date().getSeconds()}`
+    //       ]
+    //     })
+    //   ]
+    // })
+
+    // JSX
+
+    const Element2 = (props) => (
+      <h2>Sou um novo {props.name}</h2>
+    )
+
+    const element = (
+      <div className="container">
+        <h1>Are you React-ing Ironhackers?</h1>
+        
+        <Element2 name="Elemento1"/>
+        <Element2 name="Elemento2"/>
+        <Element2 name="Elemento3"/>
+        <Element2 name="Elemento4"/>
+
+        <h3>Time now is:
+          {new Date().getHours()}:
+          {new Date().getMinutes()}:
+          {new Date().getSeconds()}
+        </h3>
+      </div>
+    )
+
+    ReactDOM.render(element, root);
+  </script>
+</body>
+</html>
