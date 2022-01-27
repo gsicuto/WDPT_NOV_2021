@@ -26,7 +26,7 @@ function App() {
       </Switch> */}
       <Routes>
         <Route path='/*' element={ <Erro/> }/>
-        <Route path='/:user' element={ <Home/> }/>
+        <Route path='/' element={ <Home/> }/>
         <Route path='/users' element={ <UsersList/> }/>
         <Route path='/user/:id' element={ <UserDetail/> }/>
         <Route path='/class-counter' element={<LifeCycleClass color={color}/>}/>
