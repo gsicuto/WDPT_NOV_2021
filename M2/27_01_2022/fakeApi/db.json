@@ -1,0 +1,30 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Juliana"
+    },
+    {
+      "id": 2,
+      "name": "Erico"
+    },
+    {
+      "name": "Eduardo",
+      "id": 3
+    },
+    {
+      "name": "Igor",
+      "id": 4
+    }
+  ],
+  "tas": [
+    {
+      "id": 1,
+      "name": "DK"
+    },
+    {
+      "id": 2,
+      "name": "Ana"
+    }
+  ]
+}
