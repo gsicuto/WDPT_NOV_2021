@@ -7,3 +7,7 @@ Esses códigos por si só não são material para estudo e sim um complemento qu
 # Files
 
 Dividido Por Modulos, e data da aula ... :)
+
+# Link dos Projetos Guiados:
+
+Modulo 2 - https://github.com/gsicuto/favoriteMovies
