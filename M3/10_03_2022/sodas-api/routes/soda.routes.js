@@ -33,4 +33,26 @@ router.get('/:id', async (req, res) => {
   }
 });
 
+router.put('/:id', async (req, res) => {
+  const { id } = req.params;
+  const payload = req.body;
+  try {
+    const updatedSoda = await Soda.findOneAndUpdate({ _id: id }, payload, { new: true });
+    res.status(200).json(updatedSoda);
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+});
+
+router.delete('/:id', async (req, res) => {
+  const { id } = req.params;
+
+  try {
+    await Soda.findByIdAndDelete(id);
+    res.status(204).json();
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+})
+
 module.exports = router;
