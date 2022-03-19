@@ -14,6 +14,7 @@ router.post('/', async (req, res) => {
 });
 
 router.get('/', async (req, res) => {
+  console.log(req.user)
   try {
     const allSodas = await Soda.find();
     res.status(200).json(allSodas);
