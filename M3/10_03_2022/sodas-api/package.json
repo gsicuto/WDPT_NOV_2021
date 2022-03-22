@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "seed": "node ./seeds/soda.seeds.js",
     "dev":"nodemon app.js",
     "start":"node app.js"
   },

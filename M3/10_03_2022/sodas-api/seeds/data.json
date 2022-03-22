@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Refrigerante de Limão",
+    "calories": 100,
+    "manufactor": "El Chavo del 8"
+  },
+  {
+    "name": "Refrigerante de Groselha",
+    "calories": 300,
+    "manufactor": "El Chavo del 8"
+  },
+  {
+    "name": "Refrigerante de Tamarindo",
+    "calories": 150,
+    "manufactor": "El Chavo del 8"
+  },
+  {
+    "name": "Refrigerante de Xuxu",
+    "calories": 10,
+    "manufactor": "Felipe"
+  }
+]
