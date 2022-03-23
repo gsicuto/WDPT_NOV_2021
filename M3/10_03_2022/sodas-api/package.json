@@ -4,8 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon app.js",
-    "start": "node app.js"
+    "seed": "node ./seeds/soda.seeds.js",
+    "dev":"nodemon app.js",
+    "start":"node app.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
