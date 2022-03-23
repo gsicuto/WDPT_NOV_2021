@@ -39,7 +39,9 @@ router.post('/login', async (req, res) => {
     try {
         const user = await User.findOne({ username });
         if (!user) {
-            throw new Error('User not found')
+            const error = new Error('User not found')
+            error.status = 401
+            throw error
         }
         const compareHash = await bcrypt.compare(password, user.passwordHash)
         if(!compareHash) {
@@ -52,7 +54,7 @@ router.post('/login', async (req, res) => {
 
         res.status(200).json({ payload, token })
     } catch (error) {
-        res.status(401).json({msg: error.message})
+        res.status(error.status || 500).json({msg: error.message})
     }
 })
 
