@@ -1,0 +1,17 @@
+.soda-card {
+    background-color: darkgray;
+    width: 30%;
+    display: flex;
+    padding: 5px;
+    margin: 10px;
+    align-items: center;
+}
+
+.soda-img {
+    height: 120px;
+}
+
+.soda-info {
+    text-align: left;
+    margin: 5px;
+}

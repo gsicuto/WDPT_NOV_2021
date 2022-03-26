@@ -1,0 +1,21 @@
+html {
+  background-color: rgb(71, 70, 70);
+}
+.all-sodas {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-new-soda {
+  background-color: white;
+  align-items: center;
+  width: 200px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.home-page {
+  background-color: white;
+  text-align: center;
+  padding: 15px;
+}

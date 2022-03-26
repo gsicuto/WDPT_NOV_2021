@@ -1,0 +1,27 @@
+[
+	{
+		"_id": "623e419d2b27c7e69fca0c2f",
+		"name": "Grape Soda",
+		"manufactor": "X Industry"
+	},
+	{
+		"_id": "623ea4fdccbbb653c5d204cc",
+		"name": "Pinapple Soda",
+		"manufactor": "B Industry"
+	},
+	{
+		"_id": "623ea506ccbbb653c5d204ce",
+		"name": "Apple Soda",
+		"manufactor": "F Industry"
+	},
+	{
+		"_id": "623ea510ccbbb653c5d204d0",
+		"name": "Melon Soda",
+		"manufactor": "K Industry"
+	},
+	{
+		"_id": "623ea5a5ccbbb653c5d204d5",
+		"name": "Watermelon Soda",
+		"manufactor": "W Industry"
+	}
+]
