@@ -2,11 +2,24 @@ require('dotenv').config()
 
 const express = require('express')
 const connectDb = require('./config/db.config')
+const cors = require('cors')
 
 // Connect to database
 connectDb()
 
 const app = express()
+
+// Cors Middleware
+
+// const cors = (req, res, next) => {
+//     res.setHeader('access-control-allow-origin', '*')
+//     next()
+// }
+
+// app.use(cors)
+
+app.use(cors())
+
 
 // Utilizar o Json no body das requisições
 app.use(express.json())

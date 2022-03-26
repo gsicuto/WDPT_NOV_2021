@@ -3,7 +3,7 @@ import NewSoda from "../components/CreateSoda";
 import { NavBar } from "../components/Navbar";
 import SodaCard from "../components/SodaCard";
 
-const SodasList = ({ sodas, fetchData }) => {
+const SodasList = ({ sodas, fetchData, user }) => {
 
     useEffect(() => {
         fetchData()
@@ -11,11 +11,11 @@ const SodasList = ({ sodas, fetchData }) => {
 
     return (
         <>
-        <NavBar/>
-        <NewSoda/>
+        <NavBar user={user}/>
+        <NewSoda fetchData={fetchData}/>
         <div className="all-sodas">
         {sodas.map(soda => {
-            return <SodaCard key={soda._id} name={soda.name} manufactor={soda.manufactor}/>
+            return <SodaCard key={soda._id} {...soda}/>
         })}
         </div>
         </>

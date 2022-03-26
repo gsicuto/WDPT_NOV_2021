@@ -50,7 +50,7 @@ router.post('/login', async (req, res) => {
         const payload = {
             username
         }
-        const token = jwt.sign(payload, process.env.SECRET_JWT, { expiresIn: '1day'})
+        const token = jwt.sign(payload, process.env.SECRET_JWT, { expiresIn: '1d'})
 
         res.status(200).json({ payload, token })
     } catch (error) {

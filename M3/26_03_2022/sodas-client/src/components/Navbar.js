@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
-export const NavBar = () => {
+export const NavBar = ({user}) => {
   return (
     <nav className="navbar">
       <NavLink to="/" className="home">
@@ -16,6 +16,7 @@ export const NavBar = () => {
         <NavLink to="/favorite-sodas" className="link">
           Favorite Sodas
         </NavLink>
+        {/* <p>{user.userName}</p> */}
       </div>
     </nav>
   );
