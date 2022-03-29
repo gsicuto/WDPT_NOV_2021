@@ -1,4 +1,5 @@
 const { Router } = require('express');
+const uploadCloud = require('../config/cloudinary.config');
 
 const Soda = require('../models/Soda');
 
@@ -14,7 +15,6 @@ router.post('/', async (req, res) => {
 });
 
 router.get('/', async (req, res) => {
-  console.log(req.user)
   try {
     const allSodas = await Soda.find();
     res.status(200).json(allSodas);
@@ -54,6 +54,11 @@ router.delete('/:id', async (req, res) => {
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
+})
+
+router.post('/:id/uploadImage', uploadCloud.array('image', 3), async (req, res) => {
+  res.send(req.files)
+  //... rota
 })
 
 module.exports = router;
