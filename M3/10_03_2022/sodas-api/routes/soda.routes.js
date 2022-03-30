@@ -56,9 +56,15 @@ router.delete('/:id', async (req, res) => {
   }
 })
 
-router.post('/:id/uploadImage', uploadCloud.array('image', 3), async (req, res) => {
-  res.send(req.files)
-  //... rota
+router.post('/:id/uploadImage', uploadCloud.single('image'), async (req, res) => {
+  const { path } = req.file
+  const { id } = req.params
+  try {
+    const updatedSoda = await Soda.findByIdAndUpdate(id, { image: path }, { new: true })
+    res.status(200).json(updatedSoda)
+  } catch (error) {
+    res.status(500).json({ msg: error.message })
+  }
 })
 
 module.exports = router;
