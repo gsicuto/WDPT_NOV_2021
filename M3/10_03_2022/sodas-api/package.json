@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "engines": {
+    "node":"17.x"
+  },
   "scripts": {
     "seed": "node ./seeds/soda.seeds.js",
     "dev": "nodemon app.js",
